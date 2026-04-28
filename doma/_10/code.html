@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#003527",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#121c2a",
+                    "tertiary-container": "#3b4745",
+                    "surface-container-low": "#eff4ff",
+                    "background": "#f8f9ff",
+                    "surface-container-high": "#dee9fc",
+                    "surface-container": "#e6eeff",
+                    "primary-fixed": "#b0f0d6",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#bcc9c6",
+                    "surface-tint": "#2b6954",
+                    "outline": "#707974",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#00714d",
+                    "on-secondary-fixed": "#002113",
+                    "inverse-surface": "#27313f",
+                    "on-secondary-fixed-variant": "#005236",
+                    "error-container": "#ffdad6",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#f8f9ff",
+                    "secondary": "#006c49",
+                    "primary-container": "#064e3b",
+                    "inverse-on-surface": "#eaf1ff",
+                    "surface-container-highest": "#d9e3f6",
+                    "tertiary": "#25312f",
+                    "secondary-fixed-dim": "#4edea3",
+                    "primary-fixed-dim": "#95d3ba",
+                    "on-tertiary-fixed": "#121e1c",
+                    "on-primary-container": "#80bea6",
+                    "inverse-primary": "#95d3ba",
+                    "on-surface": "#121c2a",
+                    "on-tertiary-container": "#a8b5b2",
+                    "surface": "#f8f9ff",
+                    "on-primary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-dim": "#d0dbed",
+                    "on-surface-variant": "#404944",
+                    "secondary-container": "#6cf8bb",
+                    "tertiary-fixed": "#d8e5e2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-lg": "32px",
+                    "unit": "4px",
+                    "stack-sm": "8px",
+                    "margin-page": "40px",
+                    "container-max": "1280px",
+                    "stack-md": "16px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "body-md": ["IBM Plex Sans Arabic"],
+                    "label-md": ["IBM Plex Sans Arabic"],
+                    "label-sm": ["IBM Plex Sans Arabic"],
+                    "headline-md": ["IBM Plex Sans Arabic"],
+                    "body-sm": ["IBM Plex Sans Arabic"],
+                    "headline-lg": ["IBM Plex Sans Arabic"],
+                    "body-lg": ["IBM Plex Sans Arabic"],
+                    "headline-xl": ["IBM Plex Sans Arabic"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-xl": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            background-color: #f8f9ff;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #bfc9c3;
+            border-radius: 10px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased overflow-x-hidden pb-24">
+<!-- TopAppBar -->
+<header class="bg-white dark:bg-emerald-950 flex flex-row-reverse justify-between items-center w-full px-6 h-16 docked full-width top-0 border-b border-emerald-100 dark:border-emerald-800 shadow-sm shadow-emerald-900/5 sticky z-50">
+<div class="flex items-center gap-4">
+<h1 class="text-xl font-bold text-emerald-900 dark:text-emerald-100 font-['Work_Sans'] text-right">اللوواء الأخضر</h1>
+</div>
+<button class="transition-transform active:scale-95 text-emerald-900 dark:text-emerald-50">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</header>
+<main class="max-w-[1280px] mx-auto px-margin-page pt-stack-lg">
+<!-- Hero Section -->
+<section class="mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">نماذج التقديم</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">انضم إلينا في مسيرة النمو والاستدامة</p>
+</section>
+<!-- Tab Switcher -->
+<div class="bg-surface-container-lowest border border-outline-variant p-1 rounded-full flex mb-stack-lg shadow-sm">
+<button class="flex-1 py-3 px-6 rounded-full font-label-md text-label-md transition-all duration-300 bg-primary text-on-primary">
+                باحث عن عمل
+            </button>
+<button class="flex-1 py-3 px-6 rounded-full font-label-md text-label-md transition-all duration-300 text-outline hover:bg-surface-container">
+                صاحب عمل
+            </button>
+</div>
+<!-- Form Canvas (Job Seeker Active) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Left Side: Visual/Context -->
+<div class="md:col-span-4 hidden md:block">
+<div class="bg-primary-container text-on-primary-container p-stack-lg rounded-xl h-full flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl mb-stack-md" data-icon="rocket_launch">rocket_launch</span>
+<h3 class="font-headline-md text-headline-md mb-stack-sm">مستقبلك يبدأ هنا</h3>
+<p class="font-body-sm text-body-sm opacity-80">نحن نربط الكفاءات الوطنية بأفضل الفرص الوظيفية في قطاع الاستدامة والنمو.</p>
+</div>
+<div class="relative rounded-lg overflow-hidden h-48 mt-stack-lg">
+<img alt="Professional woman looking confident in office" class="w-full h-full object-cover" data-alt="professional Saudi woman in business attire looking confident in a modern bright corporate office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpDxXMh_x2BLw24JGUjRsiPhWdvm_Fu6MKkrFdVq6r658u-c267SqVpMkZBc5zTgWWULzZL_XNfhSRAXf55s-4A64sIMp1iwWAtGvvmVYfGRr_yR2zNZZzZOKq52AyYwFqXBkKjhl3D8KYxAkI930MqFWiKyYziT-7AsqLBZrNcbvVJeW7d84Rn0c6K-dEu3ZXUoSVXLWtEWFLvvJtruiLmuy07ODlgYI3CrYNPWY5HfStRV-nG9Gf46F84pYfedUUtWITva-Dvog"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+</div>
+</div>
+</div>
+<!-- Right Side: Form -->
+<div class="md:col-span-8">
+<div class="bg-white border border-outline-variant rounded-xl p-stack-md md:p-stack-lg shadow-sm">
+<form class="space-y-stack-md">
+<!-- Input Group: Name -->
+<div class="space-y-2">
+<label class="block font-label-md text-label-md text-on-surface-variant pr-1">الاسم الكامل</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-outline" data-icon="person">person</span>
+<input class="w-full pr-12 pl-4 py-3 bg-surface-container-low border border-outline-variant rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all font-body-md" placeholder="أدخل اسمك الثلاثي" type="text"/>
+</div>
+</div>
+<!-- Input Group: Specialization -->
+<div class="space-y-2">
+<label class="block font-label-md text-label-md text-on-surface-variant pr-1">التخصص المهني</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-outline" data-icon="school">school</span>
+<select class="w-full pr-12 pl-4 py-3 bg-surface-container-low border border-outline-variant rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all font-body-md">
+<option value="">اختر تخصصك</option>
+<option value="eng">الهندسة المستدامة</option>
+<option value="mgt">إدارة الأعمال</option>
+<option value="tech">تقنية المعلومات</option>
+<option value="env">علوم البيئة</option>
+</select>
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline pointer-events-none" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Upload CV Area -->
+<div class="space-y-2">
+<label class="block font-label-md text-label-md text-on-surface-variant pr-1">السيرة الذاتية</label>
+<div class="border-2 border-dashed border-outline-variant rounded-xl p-8 flex flex-col items-center justify-center bg-surface-container-lowest hover:bg-emerald-50 transition-colors cursor-pointer group">
+<div class="w-12 h-12 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center mb-stack-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="upload_file">upload_file</span>
+</div>
+<span class="font-label-md text-primary mb-1">انقر لرفع السيرة الذاتية</span>
+<span class="font-body-sm text-outline">PDF, DOC (الحد الأقصى 5MB)</span>
+</div>
+</div>
+<!-- Submit Button -->
+<div class="pt-stack-md">
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-opacity-90 transition-all active:scale-[0.98] shadow-md shadow-primary/10" type="submit">
+<span>إرسال الطلب</span>
+<span class="material-symbols-outlined" data-icon="send" style="transform: scaleX(-1);">send</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Subtle Info Card -->
+<div class="mt-stack-md flex items-start gap-stack-sm bg-tertiary-fixed p-stack-md rounded-lg">
+<span class="material-symbols-outlined text-primary" data-icon="info">info</span>
+<p class="font-body-sm text-on-tertiary-fixed-variant">بتقديمك لهذا النموذج، أنت توافق على معالجة بياناتك لأغراض التوظيف فقط وفق سياسة الخصوصية الخاصة باللواء الأخضر.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex flex-row-reverse justify-around items-center px-4 py-3 bg-white/80 backdrop-blur-md border-t border-emerald-100 dark:border-emerald-800 shadow-[0_-4px_10px_-2px_rgba(6,78,59,0.05)] rounded-t-lg">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-emerald-700/50 hover:text-emerald-600 dark:hover:text-emerald-300 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Work_Sans'] text-[12px] font-medium">الرئيسية</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-50 dark:bg-emerald-900/40 text-emerald-900 dark:text-emerald-100 rounded-xl px-3 py-1 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="work" data-weight="fill" style="font-variation-settings: 'FILL' 1;">work</span>
+<span class="font-['Work_Sans'] text-[12px] font-bold">الوظائف</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-emerald-700/50 hover:text-emerald-600 dark:hover:text-emerald-300 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-['Work_Sans'] text-[12px] font-medium">الرسائل</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-emerald-700/50 hover:text-emerald-600 dark:hover:text-emerald-300 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Work_Sans'] text-[12px] font-medium">الملف الشخصي</span>
+</a>
+</nav>
+<!-- Floating Background Decorative Elements -->
+<div class="fixed top-20 left-0 -z-10 w-64 h-64 bg-secondary/5 blur-[100px] rounded-full"></div>
+<div class="fixed bottom-40 right-0 -z-10 w-96 h-96 bg-primary/5 blur-[120px] rounded-full"></div>
+</body></html>
