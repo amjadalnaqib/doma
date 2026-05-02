@@ -1,206 +1,103 @@
 <!DOCTYPE html>
-
 <html dir="rtl" lang="ar"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-tertiary": "#ffffff",
-                    "surface-tint": "#2b6954",
-                    "surface-bright": "#f8f9ff",
-                    "tertiary-fixed": "#d8e5e2",
-                    "surface-container-lowest": "#ffffff",
-                    "on-primary-container": "#80bea6",
-                    "primary-fixed": "#b0f0d6",
-                    "outline-variant": "#bfc9c3",
-                    "on-secondary": "#ffffff",
-                    "on-primary": "#ffffff",
-                    "error": "#ba1a1a",
-                    "on-primary-fixed": "#002117",
-                    "inverse-surface": "#27313f",
-                    "secondary-fixed-dim": "#4edea3",
-                    "error-container": "#ffdad6",
-                    "surface-dim": "#d0dbed",
-                    "surface-container-low": "#eff4ff",
-                    "on-tertiary-container": "#a8b5b2",
-                    "secondary": "#006c49",
-                    "on-surface-variant": "#404944",
-                    "primary-container": "#064e3b",
-                    "surface-container": "#e6eeff",
-                    "surface-container-high": "#dee9fc",
-                    "primary-fixed-dim": "#95d3ba",
-                    "on-error": "#ffffff",
-                    "on-error-container": "#93000a",
-                    "on-surface": "#121c2a",
-                    "outline": "#707974",
-                    "on-primary-fixed-variant": "#0b513d",
-                    "background": "#f8f9ff",
-                    "on-secondary-fixed": "#002113",
-                    "on-secondary-fixed-variant": "#005236",
-                    "on-tertiary-fixed": "#121e1c",
-                    "surface": "#f8f9ff",
-                    "tertiary": "#25312f",
-                    "surface-container-highest": "#d9e3f6",
-                    "inverse-on-surface": "#eaf1ff",
-                    "on-background": "#121c2a",
-                    "on-secondary-container": "#00714d",
-                    "primary": "#003527",
-                    "tertiary-container": "#3b4745",
-                    "inverse-primary": "#95d3ba",
-                    "secondary-fixed": "#6ffbbe",
-                    "secondary-container": "#6cf8bb",
-                    "surface-variant": "#d9e3f6",
-                    "tertiary-fixed-dim": "#bcc9c6",
-                    "on-tertiary-fixed-variant": "#3d4947"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "stack-sm": "8px",
-                    "stack-md": "16px",
-                    "unit": "4px",
-                    "gutter": "24px",
-                    "stack-lg": "32px",
-                    "margin-page": "40px",
-                    "container-max": "1280px"
-            },
-            "fontFamily": {
-                    "body-sm": ["IBM Plex Sans Arabic"],
-                    "headline-xl": ["IBM Plex Sans Arabic"],
-                    "label-sm": ["IBM Plex Sans Arabic"],
-                    "headline-md": ["IBM Plex Sans Arabic"],
-                    "body-md": ["IBM Plex Sans Arabic"],
-                    "body-lg": ["IBM Plex Sans Arabic"],
-                    "headline-lg": ["IBM Plex Sans Arabic"],
-                    "label-md": ["IBM Plex Sans Arabic"]
-            },
-            "fontSize": {
-                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
-                    "headline-xl": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
-                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
-                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "600"}]
-            }
-          },
-        },
-      }
-    </script>
-<style>
-        body { font-family: 'IBM Plex Sans Arabic', sans-serif; background-color: #f8f9ff; }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .portal-card-shadow {
-            box-shadow: 0 10px 25px -5px rgba(6, 78, 59, 0.05);
-        }
-    </style>
+tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary":"#ffffff","surface-tint":"#2b6954","surface-bright":"#f8f9ff","tertiary-fixed":"#d8e5e2","surface-container-lowest":"#ffffff","on-primary-container":"#80bea6","primary-fixed":"#b0f0d6","outline-variant":"#bfc9c3","on-secondary":"#ffffff","on-primary":"#ffffff","error":"#ba1a1a","on-primary-fixed":"#002117","inverse-surface":"#27313f","secondary-fixed-dim":"#4edea3","error-container":"#ffdad6","surface-dim":"#d0dbed","surface-container-low":"#eff4ff","on-tertiary-container":"#a8b5b2","secondary":"#006c49","on-surface-variant":"#404944","primary-container":"#064e3b","surface-container":"#e6eeff","surface-container-high":"#dee9fc","primary-fixed-dim":"#95d3ba","on-error":"#ffffff","on-error-container":"#93000a","on-surface":"#121c2a","outline":"#707974","on-primary-fixed-variant":"#0b513d","background":"#f8f9ff","on-secondary-fixed":"#002113","on-secondary-fixed-variant":"#005236","on-tertiary-fixed":"#121e1c","surface":"#f8f9ff","tertiary":"#25312f","surface-container-highest":"#d9e3f6","inverse-on-surface":"#eaf1ff","on-background":"#121c2a","on-secondary-container":"#00714d","primary":"#003527","tertiary-container":"#3b4745","inverse-primary":"#95d3ba","secondary-fixed":"#6ffbbe","secondary-container":"#6cf8bb","surface-variant":"#d9e3f6","tertiary-fixed-dim":"#bcc9c6","on-tertiary-fixed-variant":"#3d4947"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"stack-sm":"8px","stack-md":"16px",unit:"4px",gutter:"24px","stack-lg":"32px","margin-page":"40px","container-max":"1280px"},fontFamily:{"body-sm":["IBM Plex Sans Arabic"],"headline-xl":["IBM Plex Sans Arabic"],"label-sm":["IBM Plex Sans Arabic"],"headline-md":["IBM Plex Sans Arabic"],"body-md":["IBM Plex Sans Arabic"],"body-lg":["IBM Plex Sans Arabic"],"headline-lg":["IBM Plex Sans Arabic"],"label-md":["IBM Plex Sans Arabic"]},fontSize:{"body-sm":["14px",{"lineHeight":"1.5","fontWeight":"400"}],"headline-xl":["40px",{"lineHeight":"1.2","fontWeight":"700"}],"label-sm":["12px",{"lineHeight":"1.2","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"1.4","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"1.6","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"1.6","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"1.3","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"1.2","letterSpacing":"0.02em","fontWeight":"600"}]}}}}
+</script>
+<style>body{font-family:'IBM Plex Sans Arabic',sans-serif;background-color:#f8f9ff}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24}.portal-card-shadow{box-shadow:0 10px 25px -5px rgba(6,78,59,0.05)}.mobile-menu{max-height:0;overflow:hidden;transition:max-height 0.3s ease-out}.mobile-menu.open{max-height:400px}</style>
 </head>
 <body class="bg-surface text-on-surface">
-<!-- TopNavBar -->
-<header class="bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 shadow-sm sticky top-0 z-50">
-<div class="flex flex-row-reverse justify-between items-center w-full max-w-7xl mx-auto px-10 py-4 font-sans text-right">
-<div class="text-2xl font-bold text-emerald-900 dark:text-emerald-400">اللواء الأخضر</div>
+<header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-50">
+<div class="flex flex-row-reverse justify-between items-center w-full max-w-7xl mx-auto px-10 py-4">
+<div class="text-2xl font-bold text-emerald-900"><a href="../_4/code.html">اللواء الأخضر</a></div>
 <nav class="hidden md:flex flex-row-reverse items-center gap-stack-lg">
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors" href="../_4/code.html">الرئيسية</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors" href="../_1/code.html">الوظائف</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors" href="../_5/code.html">عن الشركة</a>
-<a class="text-emerald-900 dark:text-emerald-400 font-bold border-b-2 border-emerald-900 dark:border-emerald-400 pb-1" href="../_6/code.html">أصحاب العمل</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors" href="../اتصل بنا/code.html">اتصل بنا</a>
+<a class="text-slate-600 font-medium hover:text-emerald-700" href="../_4/code.html">الرئيسية</a>
+<a class="text-slate-600 font-medium hover:text-emerald-700" href="../_1/code.html">الوظائف</a>
+<a class="text-slate-600 font-medium hover:text-emerald-700" href="../_5/code.html">عن الشركة</a>
+<a class="text-emerald-900 font-bold border-b-2 border-emerald-900 pb-1" href="../_6/code.html">أصحاب العمل</a>
+<a class="text-slate-600 font-medium hover:text-emerald-700" href="../اتصل بنا/code.html">اتصل بنا</a>
 </nav>
 <div class="flex items-center gap-4">
-<button class="bg-primary-container text-white px-6 py-2 rounded-full font-label-md hover:bg-opacity-90 active:scale-95 transition-all">
-                    تسجيل الدخول
-                </button>
+<button class="bg-primary-container text-white px-6 py-2 rounded-full font-label-md active:scale-95 transition-all">تسجيل الدخول</button>
+<button onclick="toggleMenu()" class="md:hidden text-emerald-900"><span class="material-symbols-outlined text-3xl" id="menu-icon">menu</span></button>
+</div>
+</div>
+<div class="mobile-menu md:hidden bg-white border-t border-slate-100" id="mobile-menu">
+<div class="flex flex-col items-end gap-4 px-10 py-6">
+<a class="text-slate-600 hover:text-emerald-700" href="../_4/code.html">الرئيسية</a>
+<a class="text-slate-600 hover:text-emerald-700" href="../_1/code.html">الوظائف</a>
+<a class="text-slate-600 hover:text-emerald-700" href="../_5/code.html">عن الشركة</a>
+<a class="text-emerald-900 font-bold" href="../_6/code.html">أصحاب العمل</a>
+<a class="text-slate-600 hover:text-emerald-700" href="../اتصل بنا/code.html">اتصل بنا</a>
 </div>
 </div>
 </header>
-<!-- Main Selection Portal -->
+
 <main class="min-h-[819px] flex flex-col items-center justify-center px-6 py-16 bg-surface-bright">
 <div class="w-full max-w-5xl text-center mb-12">
 <h1 class="font-headline-xl text-primary mb-4">مرحباً بك في بوابة اللواء الأخضر</h1>
 <p class="font-body-lg text-outline max-w-2xl mx-auto">اختر المسار الذي يناسب احتياجاتك المهنية للبدء في رحلة التطور والنمو</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
-<!-- Job Seeker Card -->
 <div class="group relative bg-white p-10 rounded-xl border border-slate-200 portal-card-shadow transition-all duration-300 hover:border-secondary hover:-translate-y-2 flex flex-col items-center text-center cursor-pointer">
-<div class="w-24 h-24 rounded-full bg-secondary-container/10 flex items-center justify-center mb-6 transition-colors group-hover:bg-secondary-container/20">
-<span class="material-symbols-outlined text-secondary text-5xl" data-icon="person_search">person_search</span>
-</div>
+<div class="w-24 h-24 rounded-full bg-secondary-container/10 flex items-center justify-center mb-6 transition-colors group-hover:bg-secondary-container/20"><span class="material-symbols-outlined text-secondary text-5xl">person_search</span></div>
 <h2 class="font-headline-md text-primary mb-3">أنا باحث عن عمل</h2>
 <p class="font-body-md text-outline mb-8">ابحث عن فرصتك التالية في كبرى الشركات، قدم سيرتك الذاتية وابدأ مسارك المهني الجديد اليوم.</p>
-<div class="mt-auto">
-<button class="flex items-center gap-2 text-secondary font-label-md group-hover:underline">
-                        اكتشف الوظائف
-                        <span class="material-symbols-outlined text-sm" data-icon="arrow_back">arrow_back</span>
-</button>
-</div>
-<!-- Decorative element -->
+<div class="mt-auto"><a href="../_1/code.html" class="flex items-center gap-2 text-secondary font-label-md group-hover:underline">اكتشف الوظائف <span class="material-symbols-outlined text-sm">arrow_back</span></a></div>
 <div class="absolute inset-0 border-2 border-transparent group-hover:border-secondary/10 rounded-xl pointer-events-none"></div>
 </div>
-<!-- Employer Card -->
 <div class="group relative bg-white p-10 rounded-xl border border-slate-200 portal-card-shadow transition-all duration-300 hover:border-secondary hover:-translate-y-2 flex flex-col items-center text-center cursor-pointer">
-<div class="w-24 h-24 rounded-full bg-secondary-container/10 flex items-center justify-center mb-6 transition-colors group-hover:bg-secondary-container/20">
-<span class="material-symbols-outlined text-secondary text-5xl" data-icon="domain">domain</span>
-</div>
+<div class="w-24 h-24 rounded-full bg-secondary-container/10 flex items-center justify-center mb-6 transition-colors group-hover:bg-secondary-container/20"><span class="material-symbols-outlined text-secondary text-5xl">domain</span></div>
 <h2 class="font-headline-md text-primary mb-3">أنا صاحب عمل</h2>
 <p class="font-body-md text-outline mb-8">وظف أفضل الكوادر، أعلن عن وظائفك الشاغرة وقم بإدارة عمليات التوظيف بكل سهولة واحترافية.</p>
-<div class="mt-auto">
-<button class="flex items-center gap-2 text-secondary font-label-md group-hover:underline">
-                        ابدأ التوظيف
-                        <span class="material-symbols-outlined text-sm" data-icon="arrow_back">arrow_back</span>
-</button>
-</div>
-<!-- Decorative element -->
+<div class="mt-auto"><a href="../_1/code.html" onclick="setTimeout(()=>switchTab('employer'), 500)" class="flex items-center gap-2 text-secondary font-label-md group-hover:underline">ابدأ التوظيف <span class="material-symbols-outlined text-sm">arrow_back</span></a></div>
 <div class="absolute inset-0 border-2 border-transparent group-hover:border-secondary/10 rounded-xl pointer-events-none"></div>
 </div>
 </div>
 <div class="mt-16 flex flex-col items-center gap-6">
 <p class="font-label-sm text-outline uppercase tracking-widest">موثوق من قبل</p>
 <div class="flex flex-wrap justify-center gap-10 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
-<img alt="Logo" class="h-8" data-alt="clean professional corporate logo in emerald green for a recruitment partner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4PK0vqTzjOwnCUrVNTOkTZJy7MRQ0bEYBNRBJdGvZDWvohAGbRsdlWnEgCJbBdlIjH0Q6Eo4qQ9cQgPg5mW_U3QqeW8YBSbUlNucYzgkm3GvOpSbctlzSB4K4nARxwwjtYFYY3JrfSKlQrnEjeNfZH8fSY2fC08MtAO7TsNcL9INmF9ryO_eJnO1rI0leiXMfMbRQrOYEgGhK3rBPk06jtJWUFNCIgYVRe4RUD23Ub0Oyp_G7h_UUDwB556y-kDm6--WV203WZmI"/>
-<img alt="Logo" class="h-8" data-alt="minimalist tech company logo with sharp edges and professional aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRSLS8iKHG2brAh_fPPOdiVX3i8Zjhv__5q6UOCpX6wJR6_6DUd8rUZ8JPvH-xQ29CvsXakiUalzhFlFz2VF3IgFtgD1pHHwQMq4UvltZyF0DMtaPxW7dTtqsBSPjP5_GoAIHPFosM4G31p4f67VY_nIReI2ne5fo5X3dHIUQnSDUSuCteA_BY3Zs0neCYhlGb61A1hy4YRaTYJKYj3ffQIOWpQhUuLQ8cV8ea4wqhm8DZYwAe_vi7Oq7XgOYHql-uNrt7cSUfbR4"/>
-<img alt="Logo" class="h-8" data-alt="government agency logo representing growth and stability in green tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1xl6XfCxn0C9tUya6yuMAYMd6peuCbZveriUfYFCR8ky-yU8--5XXRQRScPQOR7tJmXYnXbTiSOvuCM7LgZWAV1W7rlaMpXF5GmWek9hwEtavAv1-Hc1Y3p67P4GZybsUr6W-D5AuKCdgprhBp_PI6ewbesKhSGibEGZWlMwdk3RR0OOa_lOML3QabvHZJXJJ37yagMpM9EKrD519e1c29zy0cDAHDYfZL_cc15ANjz7W64_5DidAV-btnd1kH5wCJHK9VWkmOMA"/>
-<img alt="Logo" class="h-8" data-alt="modern startup logo with sleek typography and simple geometry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFzKhZlFYAxLdgE3-QqDj0V6_shaacPE16c5Kl99f3lBPdHkEqsfPJ-KmyEWKA27fjmxwn_gI_HfDhlr-iIMK8buQIi4jqpwxC9QBA0XE9cQnjltsH5ZmolNtn5DjuyJBL040d9OydCAJ0kspicBVWlOx8rvK6N_kRJiLUA2DN0m7DbKqpmj4UUpMBvpAXQmxkREhLPc4lAhrgSp__ouMjHpyj5HRtQRHMOs2WQTW-XBCRZBh7LLv8sN2fH9bcnQH2fnyBMKz2cGs"/>
+<img alt="Logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4PK0vqTzjOwnCUrVNTOkTZJy7MRQ0bEYBNRBJdGvZDWvohAGbRsdlWnEgCJbBdlIjH0Q6Eo4qQ9cQgPg5mW_U3QqeW8YBSbUlNucYzgkm3GvOpSbctlzSB4K4nARxwwjtYFYY3JrfSKlQrnEjeNfZH8fSY2fC08MtAO7TsNcL9INmF9ryO_eJnO1rI0leiXMfMbRQrOYEgGhK3rBPk06jtJWUFNCIgYVRe4RUD23Ub0Oyp_G7h_UUDwB556y-kDm6--WV203WZmI"/>
+<img alt="Logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRSLS8iKHG2brAh_fPPOdiVX3i8Zjhv__5q6UOCpX6wJR6_6DUd8rUZ8JPvH-xQ29CvsXakiUalzhFlFz2VF3IgFtgD1pHHwQMq4UvltZyF0DMtaPxW7dTtqsBSPjP5_GoAIHPFosM4G31p4f67VY_nIReI2ne5fo5X3dHIUQnSDUSuCteA_BY3Zs0neCYhlGb61A1hy4YRaTYJKYj3ffQIOWpQhUuLQ8cV8ea4wqhm8DZYwAe_vi7Oq7XgOYHql-uNrt7cSUfbR4"/>
+<img alt="Logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1xl6XfCxn0C9tUya6yuMAYMd6peuCbZveriUfYFCR8ky-yU8--5XXRQRScPQOR7tJmXYnXbTiSOvuCM7LgZWAV1W7rlaMpXF5GmWek9hwEtavAv1-Hc1Y3p67P4GZybsUr6W-D5AuKCdgprhBp_PI6ewbesKhSGibEGZWlMwdk3RR0OOa_lOML3QabvHZJXJJ37yagMpM9EKrD519e1c29zy0cDAHDYfZL_cc15ANjz7W64_5DidAV-btnd1kH5wCJHK9VWkmOMA"/>
 </div>
 </div>
 </main>
-<!-- Footer -->
-<footer class="bg-teal-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
-<div class="w-full max-w-7xl mx-auto px-10 py-12 flex flex-col md:flex-row-reverse justify-between items-start gap-8 font-sans text-right text-sm">
-<div class="flex flex-col">
-<div class="text-xl font-bold text-emerald-900 dark:text-emerald-400 mb-4">اللواء الأخضر</div>
-<p class="text-slate-600 dark:text-slate-400 max-w-xs mb-4">
-                    منصة التوظيف الرائدة في المنطقة، نجمع بين الكفاءات الطموحة وأصحاب العمل المتميزين لبناء مستقبل أفضل.
-                </p>
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-emerald-900 cursor-pointer" data-icon="share">share</span>
-<span class="material-symbols-outlined text-emerald-900 cursor-pointer" data-icon="public">public</span>
-</div>
-</div>
+
+<footer class="bg-teal-50 border-t border-slate-200">
+<div class="w-full max-w-7xl mx-auto px-10 py-12 flex flex-col md:flex-row-reverse justify-between items-start gap-8">
+<div class="flex flex-col"><div class="text-xl font-bold text-emerald-900 mb-4">اللواء الأخضر</div><p class="text-slate-600 max-w-xs mb-4">منصة التوظيف الرائدة في اليمن، نجمع بين الكفاءات الطموحة وأصحاب العمل المتميزين.</p><a href="#" onclick="sharePage(event)" class="flex items-center gap-2 text-emerald-900 font-label-md hover:underline"><span class="material-symbols-outlined">share</span>مشاركة</a></div>
 <div class="grid grid-cols-2 gap-x-12 gap-y-4">
-<a class="text-slate-600 dark:text-slate-400 hover:underline hover:text-emerald-700 dark:hover:text-emerald-300 transition-opacity opacity-80 hover:opacity-100" href="#">سياسة الخصوصية</a>
-<a class="text-slate-600 dark:text-slate-400 hover:underline hover:text-emerald-700 dark:hover:text-emerald-300 transition-opacity opacity-80 hover:opacity-100" href="#">الشروط والأحكام</a>
-<a class="text-slate-600 dark:text-slate-400 hover:underline hover:text-emerald-700 dark:hover:text-emerald-300 transition-opacity opacity-80 hover:opacity-100" href="#">خريطة الموقع</a>
-<a class="text-slate-600 dark:text-slate-400 hover:underline hover:text-emerald-700 dark:hover:text-emerald-300 transition-opacity opacity-80 hover:opacity-100" href="#">تواصل معنا</a>
+<a class="text-slate-600 hover:underline hover:text-emerald-700" href="#">سياسة الخصوصية</a>
+<a class="text-slate-600 hover:underline hover:text-emerald-700" href="#">الشروط والأحكام</a>
+<a class="text-slate-600 hover:underline hover:text-emerald-700" href="#">خريطة الموقع</a>
+<a class="text-slate-600 hover:underline hover:text-emerald-700" href="../اتصل بنا/code.html">تواصل معنا</a>
 </div>
-<div class="mt-auto">
-<p class="text-slate-600 dark:text-slate-400">© 2024 اللواء الأخضر. جميع الحقوق محفوظة</p>
-</div>
+<div class="mt-auto"><p class="text-slate-600">© 2024 اللواء الأخضر. جميع الحقوق محفوظة</p></div>
 </div>
 </footer>
+<script>
+function toggleMenu(){const m=document.getElementById('mobile-menu'),i=document.getElementById('menu-icon');m.classList.toggle('open');i.textContent=m.classList.contains('open')?'close':'menu'}
+function sharePage(e){e.preventDefault();if(navigator.share){navigator.share({title:document.title,text:'شوف هذا الموقع - اللواء الأخضر',url:window.location.href}).catch(()=>{})}else{navigator.clipboard.writeText(window.location.href);alert('تم نسخ رابط الصفحة!')}}
+function switchTab(tab){/* للانتقال السريع من صفحة أصحاب العمل */if(tab==='employer'){document.getElementById('tab-employer').click()}}
+</script>
+<!-- زر واتساب العائم بتصميم هوية اللواء الأخضر -->
+<a href="https://wa.me/967777997356?text=مرحباً، أريد الاستفسار عن التوظيف" target="_blank" 
+   class="fixed bottom-6 left-6 z-50 flex items-center justify-center w-16 h-16 bg-primary-container rounded-full shadow-lg hover:bg-secondary hover:scale-110 transition-all duration-300 group border-2 border-white"
+   aria-label="تواصل معنا عبر واتساب">
+    
+    <!-- أيقونة واتساب بيضاء -->
+    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    
+    <!-- تلميح يظهر عند التحويم -->
+    <span class="absolute left-full mr-3 bg-white text-gray-800 text-sm font-label-md py-2 px-4 rounded-lg shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-slate-100">
+        تواصل عبر واتساب
+    </span>
+</a>
 </body></html>
